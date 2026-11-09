@@ -1,0 +1,13 @@
+{
+  "@@locale": "mn",
+  "appTitle": "Hostel Manager",
+  "tabHome": "Нүүр",
+  "tabCleaning": "Цэвэрлэгээ",
+  "tabPurchases": "Зардал",
+  "tabReports": "Асуудал",
+  "tabProfile": "Профайл",
+  "toastSuccessTitle": "Амжилттай",
+  "toastErrorTitle": "Уучлаарай",
+  "toastErrorDescription": "Алдаа гарлаа.",
+  "emptyDefault": "Хоосон байна"
+}

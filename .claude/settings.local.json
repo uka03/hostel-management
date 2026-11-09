@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub *)",
+      "mcp__claude_ai_Figma__create_session",
+      "mcp__claude_ai_Figma__get_metadata",
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(flutter gen-l10n *)",
+      "Bash(dart run *)",
+      "Bash(dart format *)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter test *)",
+      "Bash(sed -i '' \"s#package:lucide_icons/lucide_icons.dart#package:lucide_icons_flutter/lucide_icons.dart#\" lib/utils/toasts.dart lib/utils/empty_state.dart lib/shared/components/app_tab_bar.dart)",
+      "Bash(sed -i '' 's/LucideIcons.checkCircle2/LucideIcons.circleCheck/; s/LucideIcons.xCircle/LucideIcons.circleX/' lib/utils/toasts.dart)",
+      "Bash(sed -i '' 's/LucideIcons.home/LucideIcons.house/; s/LucideIcons.alertTriangle/LucideIcons.triangleAlert/' lib/shared/components/app_tab_bar.dart)",
+      "Bash(flutter build *)"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "@@locale": "en",
+  "appTitle": "Hostel Manager",
+  "tabHome": "Home",
+  "tabCleaning": "Cleaning",
+  "tabPurchases": "Expenses",
+  "tabReports": "Reports",
+  "tabProfile": "Profile",
+  "toastSuccessTitle": "Success",
+  "toastErrorTitle": "Sorry",
+  "toastErrorDescription": "Something went wrong.",
+  "emptyDefault": "Nothing here yet"
+}
