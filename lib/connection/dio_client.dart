@@ -1,15 +1,18 @@
+import 'dart:async';
+
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 import 'package:hostel/connection/network_interceptor.dart';
+import 'package:hostel/connection/supabase_config.dart';
 
 /// The app's single HTTP client. Never create a `Dio()` anywhere else.
 ///
-/// Set the server with `--dart-define=API_BASE_URL=https://...`.
+/// Paths are relative to the Supabase project: `/rest/v1/<table>`,
+/// `/auth/v1/...` and `/functions/v1/<name>`.
 class DioClient {
   DioClient({
-    required String? Function() tokenGetter,
-    VoidCallback? onUnauthorized,
-    String baseUrl = const String.fromEnvironment('API_BASE_URL'),
+    required FutureOr<String?> Function() tokenGetter,
+    String baseUrl = SupabaseConfig.url,
+    String apiKey = SupabaseConfig.publishableKey,
   }) : dio = Dio(
          BaseOptions(
            baseUrl: baseUrl,
@@ -19,10 +22,7 @@ class DioClient {
          ),
        ) {
     dio.interceptors.add(
-      NetworkInterceptor(
-        tokenGetter: tokenGetter,
-        onUnauthorized: onUnauthorized,
-      ),
+      NetworkInterceptor(tokenGetter: tokenGetter, apiKey: apiKey),
     );
   }
 

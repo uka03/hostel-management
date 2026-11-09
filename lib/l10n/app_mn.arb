@@ -4,10 +4,198 @@
   "tabHome": "Нүүр",
   "tabCleaning": "Цэвэрлэгээ",
   "tabPurchases": "Зардал",
-  "tabReports": "Асуудал",
+  "tabReports": "Мэдэгдэл",
   "tabProfile": "Профайл",
   "toastSuccessTitle": "Амжилттай",
   "toastErrorTitle": "Уучлаарай",
   "toastErrorDescription": "Алдаа гарлаа.",
-  "emptyDefault": "Хоосон байна"
+  "emptyDefault": "Хоосон байна",
+  "authPhoneTitle": "Утасны дугаараа оруулна уу",
+  "authPhoneSubtitle": "Бид таны дугаарыг SMS-ээр баталгаажуулж, байрныхаа бусад оршин суугчидтай холбоно.",
+  "authPhoneLabel": "Утасны дугаар",
+  "authPhonePrivacy": "Таны дугаарыг бусад хэрэглэгчид харахгүй.",
+  "authTermsPrefix": "Үргэлжлүүлснээр та ",
+  "authTermsService": "Үйлчилгээний нөхцөл",
+  "authTermsJoin": " болон ",
+  "authTermsPrivacy": "Нууцлалын бодлогыг",
+  "authTermsSuffix": " зөвшөөрч байна.",
+  "authSmsSubtitle": "{phone} дугаараасаа доорх мессежийг илгээж баталгаажуулна уу.",
+  "@authSmsSubtitle": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "authSmsRecipient": "Хүлээн авагч",
+  "authSmsMessage": "Мессеж",
+  "authSmsCopy": "Хуулах",
+  "authSmsCopied": "Хуулсан",
+  "authSmsDualSim": "2 SIM-тэй бол {phone} дугаартай SIM-ээ сонгож илгээнэ үү.",
+  "@authSmsDualSim": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "authSmsWaitingHint": "Ихэвчлэн 10–30 секундэд баталгаажна",
+  "authSmsChangeNumber": "Дугаар солих",
+  "authContinue": "Үргэлжлүүлэх",
+  "authSmsTitle": "SMS-ээр баталгаажуулах",
+  "authSmsOpen": "SMS илгээх",
+  "authSmsCost": "Илгээсэн SMS бүрт оператор ₮150 суутгана.",
+  "authSmsWaiting": "SMS хүлээж байна...",
+  "authSmsExpired": "Хугацаа дууслаа. Хуучин код хүчингүй болсон.",
+  "authSmsNewCode": "Шинэ код авах",
+  "authSmsOpenFailed": "SMS апп нээгдсэнгүй. Зааврын дагуу гараар илгээнэ үү.",
+  "authPendingTitle": "Зөвшөөрөл хүлээж байна",
+  "authPendingBody": "Менежер таны бүртгэлийг баталгаажуулсны дараа апп ашиглах боломжтой.",
+  "authPendingCheck": "Дахин шалгах",
+  "profileSignOut": "Гарах",
+  "authNameTitle": "Нэрээ оруулна уу",
+  "authNameSubtitle": "Хуваарь, зардал дээр бусад оршин суугчид таны нэрийг харна.",
+  "authNameLabel": "Нэр",
+  "cleaningTitle": "Цэвэрлэгээний хуваарь",
+  "cleaningYou": "Та",
+  "cleaningUnnamed": "Нэр оруулаагүй",
+  "cleaningDaysLeft": "{count} өдөр үлдсэн",
+  "@cleaningDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cleaningStatusUpcoming": "Удахгүй",
+  "cleaningStatusActive": "Явцад",
+  "cleaningStatusDone": "Дууссан",
+  "cleaningStatusMissed": "Хийгээгүй",
+  "cleaningAreasTitle": "Цэвэрлэх газрууд",
+  "cleaningNoAreas": "Цэвэрлэх газар нэмээгүй байна.",
+  "cleaningSwapAction": "Ээлж солих",
+  "cleaningSwapSheetTitle": "Хэнтэй солих вэ?",
+  "cleaningSwapSheetBody": "Таны ээлж: {dates}",
+  "@cleaningSwapSheetBody": {
+    "placeholders": {
+      "dates": {
+        "type": "String"
+      }
+    }
+  },
+  "cleaningSwapSent": "Хүсэлт илгээлээ. Нөгөө хүн зөвшөөрсний дараа солигдоно.",
+  "cleaningSwapIncoming": "{name} таны {mine} ээлжийг өөрийн {theirs} ээлжтэй солихыг хүсэж байна.",
+  "@cleaningSwapIncoming": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      },
+      "theirs": {
+        "type": "String"
+      }
+    }
+  },
+  "cleaningSwapOutgoing": "Солих хүсэлт хүлээгдэж байна: {name}, {mine} ↔ {theirs}",
+  "@cleaningSwapOutgoing": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "mine": {
+        "type": "String"
+      },
+      "theirs": {
+        "type": "String"
+      }
+    }
+  },
+  "cleaningAccept": "Зөвшөөрөх",
+  "cleaningDecline": "Татгалзах",
+  "cleaningCancelRequest": "Цуцлах",
+  "cleaningUpcomingTitle": "Ээлжийн хуваарь",
+  "cleaningNotStarted": "Хуваарь хараахан эхлээгүй байна.",
+  "cleaningLoadFailed": "Хуваарийг ачаалж чадсангүй.",
+  "cleaningRetry": "Дахин оролдох",
+  "cleaningManageTitle": "Хуваарь удирдах",
+  "cleaningManagePending": "Шинэ бүртгэл",
+  "cleaningManageOrder": "Ээлжийн дараалал",
+  "cleaningManageOrderHint": "Өөрчлөлт дараагийн ээлжээс хэрэгжинэ.",
+  "cleaningRemoveFromRotation": "Ээлжээс хасах",
+  "cleaningAddToRotation": "Нэмэх",
+  "cleaningSave": "Хадгалах",
+  "cleaningMoveOutTitle": "Байрнаас хасах уу?",
+  "cleaningMoveOutBody": "{name} апп ашиглах эрхээ алдаж, дараагийн ээлжээс хасагдана.",
+  "@cleaningMoveOutBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cleaningMoveOutConfirm": "Хасах",
+  "cleaningRemoveArea": "Устгах",
+  "cleaningNewAreaHint": "Шинэ газрын нэр",
+  "cleaningThisPeriod": "Энэ ээлж",
+  "cleaningProgress": "{done}/{total} хийгдсэн",
+  "@cleaningProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "cleaningAreaCount": "{count} ажил",
+  "@cleaningAreaCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cleaningYourTurn": "Таны ээлж",
+  "cleaningAreaDone": "Хийсэн",
+  "cleaningAreaNotDone": "Хийгээгүй",
+  "cleaningFinish": "Дууссан",
+  "cleaningNextTurnLine": "Таны дараагийн ээлж: {dates}",
+  "@cleaningNextTurnLine": {
+    "placeholders": {
+      "dates": {
+        "type": "String"
+      }
+    }
+  },
+  "cleaningLongDate": "{month}-р сарын {day}, {weekday}",
+  "@cleaningLongDate": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "day": {
+        "type": "String"
+      },
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "weekdayShortMon": "Да",
+  "weekdayShortTue": "Мя",
+  "weekdayShortWed": "Лх",
+  "weekdayShortThu": "Пү",
+  "weekdayShortFri": "Ба",
+  "weekdayShortSat": "Бя",
+  "weekdayShortSun": "Ня",
+  "weekdayLongMon": "Даваа",
+  "weekdayLongTue": "Мягмар",
+  "weekdayLongWed": "Лхагва",
+  "weekdayLongThu": "Пүрэв",
+  "weekdayLongFri": "Баасан",
+  "weekdayLongSat": "Бямба",
+  "weekdayLongSun": "Ням"
 }

@@ -18,6 +18,7 @@ class GeneralColors {
   static const successSoftColor = Color(0xFFE7F8EF);
   static const warningColor = Color(0xFFF79009);
   static const warningSoftColor = Color(0xFFFEF4E6);
+  static const warningTextColor = Color(0xFFB54708);
   static const dangerColor = Color(0xFFF04438);
   static const dangerSoftColor = Color(0xFFFEECEB);
   static const anonymousColor = Color(0xFF7A5AF8);
@@ -25,4 +26,8 @@ class GeneralColors {
 
   static const darkCardColor = Color(0xFF1D2939);
   static const darkCardInnerColor = Color(0xFF344054);
+
+  // Mongolian flag, for the phone number prefix.
+  static const flagRedColor = Color(0xFFDA2032);
+  static const flagBlueColor = Color(0xFF0066B3);
 }

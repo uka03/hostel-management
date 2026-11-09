@@ -12,6 +12,8 @@ class PrimaryButton extends StatelessWidget {
     this.textColor,
     this.radius,
     this.isEnable = true,
+    this.height = 48,
+    this.disabledColor,
   });
   final VoidCallback onPressed;
   final Widget? content;
@@ -19,11 +21,13 @@ class PrimaryButton extends StatelessWidget {
   final Color? backgroundColor, textColor;
   final double? radius;
   final bool isEnable;
+  final double height;
+  final Color? disabledColor;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 48,
+      height: height,
       child: ElevatedButton(
         onPressed: isEnable ? onPressed : null,
         style: ButtonStyle(
@@ -31,7 +35,7 @@ class PrimaryButton extends StatelessWidget {
           backgroundColor: WidgetStatePropertyAll(
             isEnable
                 ? backgroundColor ?? GeneralColors.primaryColor
-                : GeneralColors.mutedColor,
+                : disabledColor ?? GeneralColors.mutedColor,
           ),
           shape: WidgetStatePropertyAll(
             RoundedRectangleBorder(

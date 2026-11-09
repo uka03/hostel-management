@@ -20,8 +20,8 @@ class AppTabBar extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final items = [
       (icon: LucideIcons.house, title: l10n.tabHome),
-      (icon: LucideIcons.sparkles, title: l10n.tabCleaning),
-      (icon: LucideIcons.wallet, title: l10n.tabPurchases),
+      (icon: LucideIcons.sparkle, title: l10n.tabCleaning),
+      (icon: LucideIcons.shoppingCart, title: l10n.tabPurchases),
       (icon: LucideIcons.triangleAlert, title: l10n.tabReports),
       (icon: LucideIcons.user, title: l10n.tabProfile),
     ];

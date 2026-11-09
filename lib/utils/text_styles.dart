@@ -8,12 +8,16 @@ extension GeneralTextStyle on TextTheme {
     double fontSize = 24,
     FontWeight fontWeight = FontWeight.w700,
     TextDecoration? decoration,
+    double? height,
+    double? letterSpacing,
   }) {
     return TextStyle(
       color: textColor ?? GeneralColors.textColor,
       fontSize: fontSize,
       fontWeight: fontWeight,
       decoration: decoration,
+      height: height,
+      letterSpacing: letterSpacing,
     );
   }
 
@@ -51,11 +55,13 @@ extension GeneralTextStyle on TextTheme {
   static TextStyle captionText({
     Color? textColor,
     FontWeight fontWeight = FontWeight.w400,
+    double? height,
   }) {
     return TextStyle(
       color: textColor ?? GeneralColors.mutedColor,
       fontSize: 12,
       fontWeight: fontWeight,
+      height: height,
     );
   }
 }

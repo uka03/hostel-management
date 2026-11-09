@@ -33,7 +33,6 @@ class _FakeAdapter implements HttpClientAdapter {
 
 void main() {
   late List<String> logs;
-  late int unauthorizedCalls;
 
   (Dio, _FakeAdapter) build({int status = 200, String? token = 'tok-123'}) {
     final adapter = _FakeAdapter(status);
@@ -42,7 +41,7 @@ void main() {
       ..interceptors.add(
         NetworkInterceptor(
           tokenGetter: () => token,
-          onUnauthorized: () => unauthorizedCalls++,
+          apiKey: 'pub-key',
           logger: logs.add,
         ),
       );
@@ -51,7 +50,6 @@ void main() {
 
   setUp(() {
     logs = [];
-    unauthorizedCalls = 0;
   });
 
   test('attaches the bearer token', () async {
@@ -66,10 +64,14 @@ void main() {
     expect(adapter.last!.headers.containsKey('Authorization'), isFalse);
   });
 
-  test('reports 401 responses', () async {
-    final (dio, _) = build(status: 401);
-    await expectLater(dio.get<dynamic>('/me'), throwsA(isA<DioException>()));
-    expect(unauthorizedCalls, 1);
+  test('sends the API key with or without a session', () async {
+    final (signedIn, signedInAdapter) = build();
+    await signedIn.get<dynamic>('/purchases');
+    expect(signedInAdapter.last!.headers['apikey'], 'pub-key');
+
+    final (signedOut, signedOutAdapter) = build(token: null);
+    await signedOut.get<dynamic>('/purchases');
+    expect(signedOutAdapter.last!.headers['apikey'], 'pub-key');
   });
 
   test('logs only method, path and status', () async {
@@ -115,7 +117,12 @@ void main() {
   });
 
   test('UserResponseData round-trips through JSON', () {
-    final json = {'id': 'u1', 'name': 'Бат', 'role': 'manager'};
+    final json = {
+      'id': 'u1',
+      'name': 'Бат',
+      'role': 'manager',
+      'status': 'active',
+    };
     final user = UserResponseData.fromJson(json);
     expect(user.role, UserRole.manager);
     expect(user.toJson(), json);

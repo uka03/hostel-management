@@ -13,7 +13,21 @@
       "Bash(sed -i '' \"s#package:lucide_icons/lucide_icons.dart#package:lucide_icons_flutter/lucide_icons.dart#\" lib/utils/toasts.dart lib/utils/empty_state.dart lib/shared/components/app_tab_bar.dart)",
       "Bash(sed -i '' 's/LucideIcons.checkCircle2/LucideIcons.circleCheck/; s/LucideIcons.xCircle/LucideIcons.circleX/' lib/utils/toasts.dart)",
       "Bash(sed -i '' 's/LucideIcons.home/LucideIcons.house/; s/LucideIcons.alertTriangle/LucideIcons.triangleAlert/' lib/shared/components/app_tab_bar.dart)",
-      "Bash(flutter build *)"
+      "Bash(flutter build *)",
+      "Bash(python3 -I -)",
+      "Bash(supabase --version)",
+      "Bash(curl -s -H 'apikey: __TRACKED_VAR__' https://bzhwyiswabkofgxqhnxo.supabase.co/auth/v1/settings)",
+      "Bash(python3 -I -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\({'phone_enabled':d.get\\('external',{}\\).get\\('phone'\\),'sms_provider':d.get\\('sms_provider'\\),'phone_autoconfirm':d.get\\('phone_autoconfirm'\\),'disable_signup':d.get\\('disable_signup'\\)}\\)\")",
+      "WebFetch(domain:verify.mn)",
+      "Bash(supabase secrets *)",
+      "Bash(deno --version)",
+      "Bash(docker info *)",
+      "Bash(supabase db *)",
+      "Bash(supabase functions *)",
+      "Bash(curl -s -m 40 -w '\\\\n-> http %{http_code} in %{time_total}s\\\\n' -X POST __TRACKED_VAR__/functions/v1/phone-verify -H 'apikey: __TRACKED_VAR__' -H 'Content-Type: application/json' -d '{\"action\":\"start\",\"phone\":\"+97699000000\"}')",
+      "Bash(python3 -I -c ' *)",
+      "Bash(cd /Users/uka/Desktop/hostel; sed -n 1,200p lib/connection/model/auth_session.g.dart | cut -c1-110; grep -n 'status\\\\|session' lib/connection/model/phone_verification.g.dart | cut -c1-110; ls ~/Library/Developer/Xcode/DerivedData 2>/dev/null | head -3; grep -c 'keychain' ios/Runner/*.entitlements 2>/dev/null)",
+      "Read(//Users/uka/Library/Developer/Xcode/DerivedData/**)"
     ]
   }
 }
