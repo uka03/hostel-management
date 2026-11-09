@@ -68,6 +68,9 @@ class _Backend implements HttpClientAdapter {
       name = (options.data as Map)['p_name'] as String;
       return <String, dynamic>{};
     }
+    if (options.path == '/functions/v1/reports') {
+      return {'reports': <Object>[]};
+    }
     final data = options.data as Map<String, dynamic>;
     if (data['action'] == 'start') {
       return {

@@ -347,4 +347,128 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get weekdayLongSun => 'Sunday';
+
+  @override
+  String get reportsSubtitle => 'All reports are anonymous';
+
+  @override
+  String get reportsFilterAll => 'All';
+
+  @override
+  String get reportsStatusOpen => 'Open';
+
+  @override
+  String get reportsStatusInProgress => 'In progress';
+
+  @override
+  String get reportsStatusResolved => 'Resolved';
+
+  @override
+  String get reportsCategoryNoise => 'Noise';
+
+  @override
+  String get reportsCategoryHygiene => 'Hygiene';
+
+  @override
+  String get reportsCategoryDamage => 'Damage / Repair';
+
+  @override
+  String get reportsCategorySafety => 'Safety';
+
+  @override
+  String get reportsCategoryOther => 'Other';
+
+  @override
+  String get reportsAgeRecent => 'Recently';
+
+  @override
+  String reportsAgeHours(int hours) {
+    String _temp0 = intl.Intl.pluralLogic(
+      hours,
+      locale: localeName,
+      other: '$hours hours ago',
+      one: '1 hour ago',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get reportsAgeYesterday => 'Yesterday';
+
+  @override
+  String get reportsAnonymousAuthor => 'Anonymous resident';
+
+  @override
+  String reportsManagerReply(String reply) {
+    return 'Manager: $reply';
+  }
+
+  @override
+  String get reportsVote => 'Me too';
+
+  @override
+  String get reportsEmpty => 'No reports.';
+
+  @override
+  String get reportsLoadFailed => 'Couldn\'t load the reports.';
+
+  @override
+  String get reportsFormTitle => 'Report a problem';
+
+  @override
+  String get reportsAnonymousTitle => 'You are anonymous';
+
+  @override
+  String get reportsAnonymousBody =>
+      'Your name and room number are never shown to other residents or the manager.';
+
+  @override
+  String get reportsCategoryLabel => 'Category';
+
+  @override
+  String get reportsLocationLabel => 'Location';
+
+  @override
+  String get reportsLocationHint => 'For example: 2nd floor hallway';
+
+  @override
+  String get reportsDescriptionLabel => 'Describe the problem';
+
+  @override
+  String get reportsPhotoAdd => 'Add a photo (optional)';
+
+  @override
+  String get reportsPhotoNote =>
+      'Photo location and device details are removed automatically.';
+
+  @override
+  String get reportsPhotoCamera => 'Take a photo';
+
+  @override
+  String get reportsPhotoGallery => 'Choose from library';
+
+  @override
+  String get reportsPhotoRemove => 'Remove photo';
+
+  @override
+  String get reportsPhotoFailed => 'Couldn\'t use that photo.';
+
+  @override
+  String get reportsSend => 'Send anonymously';
+
+  @override
+  String get reportsSent => 'Sent anonymously.';
+
+  @override
+  String get reportsRateLimited =>
+      'You\'ve sent too many reports today. Please try again tomorrow.';
+
+  @override
+  String get reportsManagerTitle => 'Manager response';
+
+  @override
+  String get reportsReplyHint => 'Write a reply';
+
+  @override
+  String get reportsSaved => 'Saved.';
 }

@@ -7,8 +7,8 @@ import 'package:hostel/pages/auth/components/copy_row.dart';
 import 'package:hostel/pages/auth/components/notice_banner.dart';
 import 'package:hostel/pages/auth/components/sms_status_card.dart';
 import 'package:hostel/pages/auth/provider/phone.dart';
+import 'package:hostel/shared/components/app_back_button.dart';
 import 'package:hostel/shared/components/app_card.dart';
-import 'package:hostel/shared/components/custom_button.dart';
 import 'package:hostel/shared/components/icon_box.dart';
 import 'package:hostel/shared/components/primary_button.dart';
 import 'package:hostel/shared/general_scaffold.dart';
@@ -117,7 +117,10 @@ class _SmsVerifyPageState extends State<SmsVerifyPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const _BackButton(),
+                  const Align(
+                    alignment: Alignment.centerLeft,
+                    child: AppBackButton(),
+                  ),
                   VSpacer.lg(),
                   const IconBox(
                     icon: LucideIcons.messageSquare,
@@ -239,35 +242,6 @@ class _SmsVerifyPageState extends State<SmsVerifyPage> {
       VSpacer.md(),
       SmsStatusCard(remaining: _remaining(verification)),
     ];
-  }
-}
-
-class _BackButton extends StatelessWidget {
-  const _BackButton();
-
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: CustomButton(
-        onTap: () => Navigator.of(context).maybePop(),
-        borderRadius: BorderRadius.circular(14),
-        child: Container(
-          width: 44,
-          height: 44,
-          decoration: BoxDecoration(
-            color: GeneralColors.cardColor,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: GeneralColors.borderColor),
-          ),
-          child: const Icon(
-            LucideIcons.chevronLeft,
-            size: 22,
-            color: GeneralColors.textColor,
-          ),
-        ),
-      ),
-    );
   }
 }
 

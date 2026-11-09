@@ -335,4 +335,122 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get weekdayLongSun => 'Ням';
+
+  @override
+  String get reportsSubtitle => 'Бүх мэдэгдэл нэргүй';
+
+  @override
+  String get reportsFilterAll => 'Бүгд';
+
+  @override
+  String get reportsStatusOpen => 'Нээлттэй';
+
+  @override
+  String get reportsStatusInProgress => 'Явцад';
+
+  @override
+  String get reportsStatusResolved => 'Шийдэгдсэн';
+
+  @override
+  String get reportsCategoryNoise => 'Чимээ шуугиан';
+
+  @override
+  String get reportsCategoryHygiene => 'Ариун цэвэр';
+
+  @override
+  String get reportsCategoryDamage => 'Эвдрэл / Засвар';
+
+  @override
+  String get reportsCategorySafety => 'Аюулгүй байдал';
+
+  @override
+  String get reportsCategoryOther => 'Бусад';
+
+  @override
+  String get reportsAgeRecent => 'Саяхан';
+
+  @override
+  String reportsAgeHours(int hours) {
+    return '$hours цагийн өмнө';
+  }
+
+  @override
+  String get reportsAgeYesterday => 'Өчигдөр';
+
+  @override
+  String get reportsAnonymousAuthor => 'Нэргүй оршин суугч';
+
+  @override
+  String reportsManagerReply(String reply) {
+    return 'Менежер: $reply';
+  }
+
+  @override
+  String get reportsVote => 'Надад ч бас';
+
+  @override
+  String get reportsEmpty => 'Мэдэгдэл алга байна.';
+
+  @override
+  String get reportsLoadFailed => 'Мэдэгдлүүдийг ачаалж чадсангүй.';
+
+  @override
+  String get reportsFormTitle => 'Асуудал мэдэгдэх';
+
+  @override
+  String get reportsAnonymousTitle => 'Та нэргүй байна';
+
+  @override
+  String get reportsAnonymousBody =>
+      'Таны нэр, өрөөний дугаар бусад оршин суугч болон менежерт хэзээ ч харагдахгүй.';
+
+  @override
+  String get reportsCategoryLabel => 'Ангилал';
+
+  @override
+  String get reportsLocationLabel => 'Байршил';
+
+  @override
+  String get reportsLocationHint => 'Жишээ: 2-р давхрын коридор';
+
+  @override
+  String get reportsDescriptionLabel => 'Асуудлаа тайлбарлана уу';
+
+  @override
+  String get reportsPhotoAdd => 'Зураг нэмэх (заавал биш)';
+
+  @override
+  String get reportsPhotoNote =>
+      'Зургийн байршил, төхөөрөмжийн мэдээллийг автоматаар устгана.';
+
+  @override
+  String get reportsPhotoCamera => 'Зураг авах';
+
+  @override
+  String get reportsPhotoGallery => 'Зургийн сангаас сонгох';
+
+  @override
+  String get reportsPhotoRemove => 'Зураг хасах';
+
+  @override
+  String get reportsPhotoFailed => 'Зургийг ашиглаж чадсангүй.';
+
+  @override
+  String get reportsSend => 'Нэргүйгээр илгээх';
+
+  @override
+  String get reportsSent => 'Нэргүйгээр илгээгдлээ.';
+
+  @override
+  String get reportsRateLimited =>
+      'Өнөөдөр хэт олон мэдэгдэл илгээсэн байна. Маргааш дахин оролдоно уу.';
+
+  @override
+  String get reportsManagerTitle => 'Менежерийн хариу';
+
+  @override
+  String get reportsReplyHint => 'Хариугаа бичнэ үү';
+
+  @override
+  String get reportsSaved => 'Хадгалагдлаа.';
 }

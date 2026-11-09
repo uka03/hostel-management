@@ -6,6 +6,10 @@
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Асуудлын зураг авахад камер ашиглана.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Асуудлын зураг сонгоход зургийн сан ашиглана.</string>
 	<key>CFBundleDisplayName</key>
 	<string>Hostel</string>
 	<key>CFBundleLocalizations</key>

@@ -424,3 +424,7 @@ enabled = true
 [functions.phone-verify]
 # Callers are not signed in yet, and publishable keys are not JWTs.
 verify_jwt = false
+
+[functions.reports]
+# Checks the signed-in user itself; see supabase/functions/reports/index.ts.
+verify_jwt = false

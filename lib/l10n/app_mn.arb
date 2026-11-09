@@ -197,5 +197,56 @@
   "weekdayLongThu": "Пүрэв",
   "weekdayLongFri": "Баасан",
   "weekdayLongSat": "Бямба",
-  "weekdayLongSun": "Ням"
+  "weekdayLongSun": "Ням",
+  "reportsSubtitle": "Бүх мэдэгдэл нэргүй",
+  "reportsFilterAll": "Бүгд",
+  "reportsStatusOpen": "Нээлттэй",
+  "reportsStatusInProgress": "Явцад",
+  "reportsStatusResolved": "Шийдэгдсэн",
+  "reportsCategoryNoise": "Чимээ шуугиан",
+  "reportsCategoryHygiene": "Ариун цэвэр",
+  "reportsCategoryDamage": "Эвдрэл / Засвар",
+  "reportsCategorySafety": "Аюулгүй байдал",
+  "reportsCategoryOther": "Бусад",
+  "reportsAgeRecent": "Саяхан",
+  "reportsAgeHours": "{hours} цагийн өмнө",
+  "@reportsAgeHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "reportsAgeYesterday": "Өчигдөр",
+  "reportsAnonymousAuthor": "Нэргүй оршин суугч",
+  "reportsManagerReply": "Менежер: {reply}",
+  "@reportsManagerReply": {
+    "placeholders": {
+      "reply": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsVote": "Надад ч бас",
+  "reportsEmpty": "Мэдэгдэл алга байна.",
+  "reportsLoadFailed": "Мэдэгдлүүдийг ачаалж чадсангүй.",
+  "reportsFormTitle": "Асуудал мэдэгдэх",
+  "reportsAnonymousTitle": "Та нэргүй байна",
+  "reportsAnonymousBody": "Таны нэр, өрөөний дугаар бусад оршин суугч болон менежерт хэзээ ч харагдахгүй.",
+  "reportsCategoryLabel": "Ангилал",
+  "reportsLocationLabel": "Байршил",
+  "reportsLocationHint": "Жишээ: 2-р давхрын коридор",
+  "reportsDescriptionLabel": "Асуудлаа тайлбарлана уу",
+  "reportsPhotoAdd": "Зураг нэмэх (заавал биш)",
+  "reportsPhotoNote": "Зургийн байршил, төхөөрөмжийн мэдээллийг автоматаар устгана.",
+  "reportsPhotoCamera": "Зураг авах",
+  "reportsPhotoGallery": "Зургийн сангаас сонгох",
+  "reportsPhotoRemove": "Зураг хасах",
+  "reportsPhotoFailed": "Зургийг ашиглаж чадсангүй.",
+  "reportsSend": "Нэргүйгээр илгээх",
+  "reportsSent": "Нэргүйгээр илгээгдлээ.",
+  "reportsRateLimited": "Өнөөдөр хэт олон мэдэгдэл илгээсэн байна. Маргааш дахин оролдоно уу.",
+  "reportsManagerTitle": "Менежерийн хариу",
+  "reportsReplyHint": "Хариугаа бичнэ үү",
+  "reportsSaved": "Хадгалагдлаа."
 }

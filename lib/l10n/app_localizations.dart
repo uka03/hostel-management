@@ -697,6 +697,228 @@ abstract class AppLocalizations {
   /// In mn, this message translates to:
   /// **'Ням'**
   String get weekdayLongSun;
+
+  /// No description provided for @reportsSubtitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Бүх мэдэгдэл нэргүй'**
+  String get reportsSubtitle;
+
+  /// No description provided for @reportsFilterAll.
+  ///
+  /// In mn, this message translates to:
+  /// **'Бүгд'**
+  String get reportsFilterAll;
+
+  /// No description provided for @reportsStatusOpen.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нээлттэй'**
+  String get reportsStatusOpen;
+
+  /// No description provided for @reportsStatusInProgress.
+  ///
+  /// In mn, this message translates to:
+  /// **'Явцад'**
+  String get reportsStatusInProgress;
+
+  /// No description provided for @reportsStatusResolved.
+  ///
+  /// In mn, this message translates to:
+  /// **'Шийдэгдсэн'**
+  String get reportsStatusResolved;
+
+  /// No description provided for @reportsCategoryNoise.
+  ///
+  /// In mn, this message translates to:
+  /// **'Чимээ шуугиан'**
+  String get reportsCategoryNoise;
+
+  /// No description provided for @reportsCategoryHygiene.
+  ///
+  /// In mn, this message translates to:
+  /// **'Ариун цэвэр'**
+  String get reportsCategoryHygiene;
+
+  /// No description provided for @reportsCategoryDamage.
+  ///
+  /// In mn, this message translates to:
+  /// **'Эвдрэл / Засвар'**
+  String get reportsCategoryDamage;
+
+  /// No description provided for @reportsCategorySafety.
+  ///
+  /// In mn, this message translates to:
+  /// **'Аюулгүй байдал'**
+  String get reportsCategorySafety;
+
+  /// No description provided for @reportsCategoryOther.
+  ///
+  /// In mn, this message translates to:
+  /// **'Бусад'**
+  String get reportsCategoryOther;
+
+  /// No description provided for @reportsAgeRecent.
+  ///
+  /// In mn, this message translates to:
+  /// **'Саяхан'**
+  String get reportsAgeRecent;
+
+  /// No description provided for @reportsAgeHours.
+  ///
+  /// In mn, this message translates to:
+  /// **'{hours} цагийн өмнө'**
+  String reportsAgeHours(int hours);
+
+  /// No description provided for @reportsAgeYesterday.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өчигдөр'**
+  String get reportsAgeYesterday;
+
+  /// No description provided for @reportsAnonymousAuthor.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэргүй оршин суугч'**
+  String get reportsAnonymousAuthor;
+
+  /// No description provided for @reportsManagerReply.
+  ///
+  /// In mn, this message translates to:
+  /// **'Менежер: {reply}'**
+  String reportsManagerReply(String reply);
+
+  /// No description provided for @reportsVote.
+  ///
+  /// In mn, this message translates to:
+  /// **'Надад ч бас'**
+  String get reportsVote;
+
+  /// No description provided for @reportsEmpty.
+  ///
+  /// In mn, this message translates to:
+  /// **'Мэдэгдэл алга байна.'**
+  String get reportsEmpty;
+
+  /// No description provided for @reportsLoadFailed.
+  ///
+  /// In mn, this message translates to:
+  /// **'Мэдэгдлүүдийг ачаалж чадсангүй.'**
+  String get reportsLoadFailed;
+
+  /// No description provided for @reportsFormTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Асуудал мэдэгдэх'**
+  String get reportsFormTitle;
+
+  /// No description provided for @reportsAnonymousTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Та нэргүй байна'**
+  String get reportsAnonymousTitle;
+
+  /// No description provided for @reportsAnonymousBody.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны нэр, өрөөний дугаар бусад оршин суугч болон менежерт хэзээ ч харагдахгүй.'**
+  String get reportsAnonymousBody;
+
+  /// No description provided for @reportsCategoryLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Ангилал'**
+  String get reportsCategoryLabel;
+
+  /// No description provided for @reportsLocationLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Байршил'**
+  String get reportsLocationLabel;
+
+  /// No description provided for @reportsLocationHint.
+  ///
+  /// In mn, this message translates to:
+  /// **'Жишээ: 2-р давхрын коридор'**
+  String get reportsLocationHint;
+
+  /// No description provided for @reportsDescriptionLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Асуудлаа тайлбарлана уу'**
+  String get reportsDescriptionLabel;
+
+  /// No description provided for @reportsPhotoAdd.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зураг нэмэх (заавал биш)'**
+  String get reportsPhotoAdd;
+
+  /// No description provided for @reportsPhotoNote.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зургийн байршил, төхөөрөмжийн мэдээллийг автоматаар устгана.'**
+  String get reportsPhotoNote;
+
+  /// No description provided for @reportsPhotoCamera.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зураг авах'**
+  String get reportsPhotoCamera;
+
+  /// No description provided for @reportsPhotoGallery.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зургийн сангаас сонгох'**
+  String get reportsPhotoGallery;
+
+  /// No description provided for @reportsPhotoRemove.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зураг хасах'**
+  String get reportsPhotoRemove;
+
+  /// No description provided for @reportsPhotoFailed.
+  ///
+  /// In mn, this message translates to:
+  /// **'Зургийг ашиглаж чадсангүй.'**
+  String get reportsPhotoFailed;
+
+  /// No description provided for @reportsSend.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэргүйгээр илгээх'**
+  String get reportsSend;
+
+  /// No description provided for @reportsSent.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэргүйгээр илгээгдлээ.'**
+  String get reportsSent;
+
+  /// No description provided for @reportsRateLimited.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өнөөдөр хэт олон мэдэгдэл илгээсэн байна. Маргааш дахин оролдоно уу.'**
+  String get reportsRateLimited;
+
+  /// No description provided for @reportsManagerTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Менежерийн хариу'**
+  String get reportsManagerTitle;
+
+  /// No description provided for @reportsReplyHint.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хариугаа бичнэ үү'**
+  String get reportsReplyHint;
+
+  /// No description provided for @reportsSaved.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хадгалагдлаа.'**
+  String get reportsSaved;
 }
 
 class _AppLocalizationsDelegate
