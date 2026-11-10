@@ -248,5 +248,257 @@
   "reportsRateLimited": "Өнөөдөр хэт олон мэдэгдэл илгээсэн байна. Маргааш дахин оролдоно уу.",
   "reportsManagerTitle": "Менежерийн хариу",
   "reportsReplyHint": "Хариугаа бичнэ үү",
-  "reportsSaved": "Хадгалагдлаа."
+  "reportsSaved": "Хадгалагдлаа.",
+  "purchasesTitle": "Хамтын худалдан авалт",
+  "purchasesSubtitle": "{count} хүнд тэнцүү хуваана",
+  "@purchasesSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "purchasesFundLabel": "Хамтын сан",
+  "purchasesYouPaid": "Та төлсөн",
+  "purchasesYourShare": "Таны хувь",
+  "purchasesGetBack": "Танд буцаж ирэх {amount}",
+  "@purchasesGetBack": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesYouOwe": "Таны төлөх {amount}",
+  "@purchasesYouOwe": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesNeededTitle": "Шаардлагатай бараа",
+  "purchasesNoNeeded": "Шаардлагатай бараа алга.",
+  "purchasesClaim": "Би авна",
+  "purchasesReceipt": "Баримт",
+  "purchasesClaimedByYou": "Та авахаар болсон",
+  "purchasesClaimedBy": "{name} авахаар болсон",
+  "@purchasesClaimedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesRequestedToday": "Өнөөдөр хүссэн",
+  "purchasesRequestedYesterday": "Өчигдөр хүссэн",
+  "purchasesRequestedDays": "{days} өдрийн өмнө хүссэн",
+  "@purchasesRequestedDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "purchasesRemoveItem": "Хүсэлт устгах",
+  "purchasesSeeAll": "Бүгдийг харах",
+  "purchasesNoRecent": "Худалдан авалт алга.",
+  "purchasesPerPerson": "{amount} / хүн",
+  "@purchasesPerPerson": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesLoadFailed": "Худалдан авалтыг ачаалж чадсангүй.",
+  "purchasesAddPurchase": "Худалдан авалт нэмэх",
+  "purchasesAddItem": "Шаардлагатай бараа нэмэх",
+  "purchasesItemName": "Барааны нэр",
+  "purchasesAmount": "Дүн",
+  "purchasesEachPays": "{people} хүнд хуваавал нэг хүнд {amount}",
+  "@purchasesEachPays": {
+    "placeholders": {
+      "people": {
+        "type": "int"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesSave": "Хадгалах",
+  "purchasesReceiptHint": "Баримтын дүнгээ оруулна уу.",
+  "purchasesGiveUpItem": "Авахаа болих",
+  "purchasesDeleteTitle": "Устгах уу?",
+  "purchasesDeleteBody": "Энэ худалдан авалт бүх хүний тооцооноос хасагдана.",
+  "purchasesMarkPaid": "Төлсөн",
+  "purchasesPay": "Төлөх",
+  "purchasesPaidCount": "{paid}/{total} төлсөн",
+  "@purchasesPaidCount": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "purchasesPayTitle": "Төлбөр төлөх",
+  "purchasesPayBank": "Банк",
+  "purchasesPayAccountNumber": "Дансны дугаар",
+  "purchasesPayAccountHolder": "Данс эзэмшигчийн нэр",
+  "purchasesPayNoAccount": "{name} дансны мэдээллээ оруулаагүй байна. Биечлэн төлж болно.",
+  "@purchasesPayNoAccount": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "purchasesPayLoadFailed": "Дансны мэдээллийг ачаалж чадсангүй.",
+  "purchasesPayClose": "Хаах",
+  "purchasesUnpaidTitle": "Төлөөгүй худалдан авалт",
+  "purchasesUnpaidNone": "Бүх худалдан авалтаа төлсөн байна.",
+  "purchasesHistoryTitle": "Худалдан авалтын түүх",
+  "profileBankTitle": "Дансны мэдээлэл",
+  "profileEditName": "Нэр засах",
+  "profileRoleResident": "Оршин суугч",
+  "profileRoleManager": "Менежер",
+  "profileApartment": "Манай байр",
+  "profileResidentCount": "{count} оршин суугч",
+  "@profileResidentCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStatCleaned": "Удаа цэвэрлэсэн",
+  "profileStatNextTurn": "Дараагийн ээлж",
+  "profileStatGetBack": "Буцаж авах",
+  "profileStatOwe": "Төлөх",
+  "profileBankNone": "Данс нэмээгүй байна",
+  "profileNotifications": "Мэдэгдэл",
+  "profileLanguage": "Хэл",
+  "languageMongolian": "Монгол",
+  "languageEnglish": "English",
+  "profilePrivacy": "Нууцлал",
+  "profilePrivacySubtitle": "Мэдэгдлүүд таны нэртэй холбогдохгүй",
+  "profilePrivacyBody": "Таны илгээсэн мэдэгдэл нэргүй бөгөөд бусад оршин суугч, менежер хэн илгээснийг харах боломжгүй. Утасны дугаар тань бусад хэрэглэгчид харагдахгүй. Дансны мэдээлэл тань зөвхөн таны авсан зүйлд хувиа төлөх хүмүүст харагдана.",
+  "profileHelp": "Тусламж",
+  "profileHelpBody": "Асуудал гарвал байрныхаа менежертэй холбогдоно уу.",
+  "profileSignOutTitle": "Гарах уу?",
+  "profileSignOutBody": "Дахин нэвтрэхэд SMS илгээх шаардлагатай.",
+  "homeGreetingMorning": "Өглөөний мэнд,",
+  "homeGreetingAfternoon": "Өдрийн мэнд,",
+  "homeGreetingEvening": "Оройн мэнд,",
+  "homeCurrentDutyLabel": "Таны жижүүр",
+  "homeNextDutyLabel": "Таны дараагийн жижүүр",
+  "homeDutyTitle": "Нийтийн талбайн цэвэрлэгээ",
+  "homeNoDuty": "Ээлж товлогдоогүй",
+  "homeMarkDone": "Хийсэн гэж тэмдэглэх",
+  "homeViewSchedule": "Хуваарь харах",
+  "homeQuickTitle": "Хурдан үйлдэл",
+  "homeItemsMissing": "{count} бараа дутуу",
+  "@homeItemsMissing": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeReportAction": "Мэдэгдэх",
+  "homeAnonymous": "Нэргүй",
+  "homeActivityTitle": "Сүүлийн үйл явдал",
+  "homeNoActivity": "Одоохондоо үйл явдал алга.",
+  "homeToday": "Өнөөдөр",
+  "homeActivityCleaned": "{name} цэвэрлэгээ хийлээ",
+  "@homeActivityCleaned": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeActivityBought": "{name} {item} авлаа · {amount}",
+  "@homeActivityBought": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "item": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "homeActivityReport": "Нэргүй мэдэгдэл: {title}",
+  "@homeActivityReport": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationsTitle": "Сонордуулга",
+  "notificationsEmpty": "Одоохондоо сонордуулга алга.",
+  "notificationPaid": "{name} танд {amount} төллөө",
+  "@notificationPaid": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationNewPurchase": "{name} {item} авлаа · таны хувь {amount}",
+  "@notificationNewPurchase": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "item": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationReportNew": "Шинэ нэргүй мэдэгдэл: {category} · {location}",
+  "@notificationReportNew": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "location": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationReportReplied": "«{location}» мэдэгдэлд хариу ирлээ",
+  "@notificationReportReplied": {
+    "placeholders": {
+      "location": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationReportStatus": "«{location}» мэдэгдэл: {status}",
+  "@notificationReportStatus": {
+    "placeholders": {
+      "location": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -38,16 +38,19 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider.value(value: auth),
         Provider.value(value: client),
       ],
-      child: MaterialApp(
-        onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
-        debugShowCheckedModeBanner: false,
-        theme: appTheme,
-        locale: const Locale('mn'),
-        supportedLocales: AppLocalizations.supportedLocales,
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        initialRoute: MainScaffold.path,
-        routes: AppRoutes.routes,
-        builder: EasyLoading.init(),
+      child: Selector<AuthProvider, String>(
+        selector: (_, auth) => auth.user?.language ?? 'mn',
+        builder: (_, language, _) => MaterialApp(
+          onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
+          debugShowCheckedModeBanner: false,
+          theme: appTheme,
+          locale: Locale(language),
+          supportedLocales: AppLocalizations.supportedLocales,
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          initialRoute: MainScaffold.path,
+          routes: AppRoutes.routes,
+          builder: EasyLoading.init(),
+        ),
       ),
     );
   }

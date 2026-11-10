@@ -16,6 +16,7 @@ import 'package:hostel/pages/cleaning/provider/rotation.dart';
 import 'package:hostel/shared/components/app_badge.dart';
 import 'package:hostel/shared/components/custom_button.dart';
 import 'package:hostel/shared/components/primary_button.dart';
+import 'package:hostel/shared/components/reload_when_visible.dart';
 import 'package:hostel/shared/provider/auth_provider.dart';
 import 'package:hostel/utils/colors.dart';
 import 'package:hostel/utils/empty_state.dart';
@@ -32,8 +33,11 @@ class CleaningPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) =>
-          CleaningProvider(CleaningApi(context.read<DioClient>().dio))..load(),
-      child: const _CleaningView(),
+          CleaningProvider(CleaningApi(context.read<DioClient>().dio)),
+      child: ReloadWhenVisible(
+        onVisible: (context) => context.read<CleaningProvider>().load(),
+        child: const _CleaningView(),
+      ),
     );
   }
 }

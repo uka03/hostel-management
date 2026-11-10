@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hostel/connection/model/phone_verification.dart';
 import 'package:hostel/l10n/app_localizations.dart';
-import 'package:hostel/pages/auth/components/copy_row.dart';
+import 'package:hostel/shared/components/copy_row.dart';
 import 'package:hostel/pages/auth/components/notice_banner.dart';
 import 'package:hostel/pages/auth/components/sms_status_card.dart';
 import 'package:hostel/pages/auth/provider/phone.dart';

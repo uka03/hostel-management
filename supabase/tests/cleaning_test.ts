@@ -315,6 +315,47 @@ Deno.test("clients cannot touch the tables or call in anonymously", async () => 
   );
 });
 
+Deno.test("profile stats count only your finished duties", async () => {
+  const t = await setup();
+  const [a, b] = [await t.addUser(), await t.addUser()];
+  await t.start([a, b]);
+  const stats = async (uid: string) =>
+    (await t.as(uid, "select public.profile_stats() as s"))[0].s;
+  for (const area of await areaIds(t)) {
+    await t.as(a, "select public.set_area_checked($1, true)", [area]);
+  }
+
+  assertEquals(await stats(a), { cleaned_count: 1 });
+  assertEquals(await stats(b), { cleaned_count: 0 });
+});
+
+Deno.test("preferences save for yourself and are validated", async () => {
+  const t = await setup();
+  const [a, b] = [await t.addUser(), await t.addUser()];
+  const save = "select public.set_my_preferences($1, $2)";
+
+  await t.as(a, save, [false, "en"]);
+
+  const read = async (id: string) =>
+    (await t.db.query<Row>(
+      "select notifications_enabled as n, language as l from public.profiles where id = $1",
+      [id],
+    )).rows[0];
+  assertEquals(await read(a), { n: false, l: "en" });
+  assertEquals(await read(b), { n: true, l: "mn" });
+  await assertRejects(
+    () => t.as(a, save, [true, "fr"]),
+    Error,
+    "invalid_preferences",
+  );
+  await assertRejects(() => t.as(null, save, [true, "mn"]), Error, "permission denied");
+  await assertRejects(
+    () => t.as(null, "select public.profile_stats()"),
+    Error,
+    "permission denied",
+  );
+});
+
 Deno.test("the overview never exposes phone numbers", async () => {
   const t = await setup();
   const manager = await t.addUser("manager");

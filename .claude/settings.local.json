@@ -27,7 +27,11 @@
       "Bash(curl -s -m 40 -w '\\\\n-> http %{http_code} in %{time_total}s\\\\n' -X POST __TRACKED_VAR__/functions/v1/phone-verify -H 'apikey: __TRACKED_VAR__' -H 'Content-Type: application/json' -d '{\"action\":\"start\",\"phone\":\"+97699000000\"}')",
       "Bash(python3 -I -c ' *)",
       "Bash(cd /Users/uka/Desktop/hostel; sed -n 1,200p lib/connection/model/auth_session.g.dart | cut -c1-110; grep -n 'status\\\\|session' lib/connection/model/phone_verification.g.dart | cut -c1-110; ls ~/Library/Developer/Xcode/DerivedData 2>/dev/null | head -3; grep -c 'keychain' ios/Runner/*.entitlements 2>/dev/null)",
-      "Read(//Users/uka/Library/Developer/Xcode/DerivedData/**)"
+      "Read(//Users/uka/Library/Developer/Xcode/DerivedData/**)",
+      "Bash(supabase migration *)",
+      "Bash(python3 -)",
+      "Bash(grep -n \"fontWeight\" lib/utils/text_styles.dart | head -5 && grep -n \"wallet\\\\b\\\\|static const IconData wallet \" ~/.pub-cache/hosted/pub.dev/lucide_icons_flutter-*/lib/lucide_icons.dart 2>/dev/null | head -2)",
+      "Read(//Users/uka/.pub-cache/hosted/pub.dev/**)"
     ]
   }
 }

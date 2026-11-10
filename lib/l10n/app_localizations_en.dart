@@ -471,4 +471,340 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reportsSaved => 'Saved.';
+
+  @override
+  String get purchasesTitle => 'Shared purchases';
+
+  @override
+  String purchasesSubtitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Split equally between $count people',
+      one: 'Split with 1 person',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get purchasesFundLabel => 'Shared fund';
+
+  @override
+  String get purchasesYouPaid => 'You paid';
+
+  @override
+  String get purchasesYourShare => 'Your share';
+
+  @override
+  String purchasesGetBack(String amount) {
+    return 'You get back $amount';
+  }
+
+  @override
+  String purchasesYouOwe(String amount) {
+    return 'You owe $amount';
+  }
+
+  @override
+  String get purchasesNeededTitle => 'Needed items';
+
+  @override
+  String get purchasesNoNeeded => 'Nothing is needed right now.';
+
+  @override
+  String get purchasesClaim => 'I\'ll buy';
+
+  @override
+  String get purchasesReceipt => 'Receipt';
+
+  @override
+  String get purchasesClaimedByYou => 'You\'re buying this';
+
+  @override
+  String purchasesClaimedBy(String name) {
+    return '$name is buying this';
+  }
+
+  @override
+  String get purchasesRequestedToday => 'Requested today';
+
+  @override
+  String get purchasesRequestedYesterday => 'Requested yesterday';
+
+  @override
+  String purchasesRequestedDays(int days) {
+    return 'Requested $days days ago';
+  }
+
+  @override
+  String get purchasesRemoveItem => 'Remove request';
+
+  @override
+  String get purchasesSeeAll => 'See all';
+
+  @override
+  String get purchasesNoRecent => 'No purchases yet.';
+
+  @override
+  String purchasesPerPerson(String amount) {
+    return '$amount / person';
+  }
+
+  @override
+  String get purchasesLoadFailed => 'Couldn\'t load the purchases.';
+
+  @override
+  String get purchasesAddPurchase => 'Add a purchase';
+
+  @override
+  String get purchasesAddItem => 'Add a needed item';
+
+  @override
+  String get purchasesItemName => 'Item name';
+
+  @override
+  String get purchasesAmount => 'Amount';
+
+  @override
+  String purchasesEachPays(int people, String amount) {
+    return 'Split between $people: $amount each';
+  }
+
+  @override
+  String get purchasesSave => 'Save';
+
+  @override
+  String get purchasesReceiptHint => 'Enter the amount on your receipt.';
+
+  @override
+  String get purchasesGiveUpItem => 'I won\'t buy this';
+
+  @override
+  String get purchasesDeleteTitle => 'Delete this?';
+
+  @override
+  String get purchasesDeleteBody =>
+      'This purchase will be removed from everyone\'s totals.';
+
+  @override
+  String get purchasesMarkPaid => 'Paid';
+
+  @override
+  String get purchasesPay => 'Pay';
+
+  @override
+  String purchasesPaidCount(int paid, int total) {
+    return '$paid/$total paid';
+  }
+
+  @override
+  String get purchasesPayTitle => 'Pay your share';
+
+  @override
+  String get purchasesPayBank => 'Bank';
+
+  @override
+  String get purchasesPayAccountNumber => 'Account number';
+
+  @override
+  String get purchasesPayAccountHolder => 'Account holder';
+
+  @override
+  String purchasesPayNoAccount(String name) {
+    return '$name hasn\'t added an account yet. You can pay in person.';
+  }
+
+  @override
+  String get purchasesPayLoadFailed => 'Couldn\'t load the account details.';
+
+  @override
+  String get purchasesPayClose => 'Close';
+
+  @override
+  String get purchasesUnpaidTitle => 'Purchases I haven\'t paid';
+
+  @override
+  String get purchasesUnpaidNone => 'You\'ve paid for every purchase.';
+
+  @override
+  String get purchasesHistoryTitle => 'Purchase history';
+
+  @override
+  String get profileBankTitle => 'Bank account';
+
+  @override
+  String get profileEditName => 'Edit name';
+
+  @override
+  String get profileRoleResident => 'Resident';
+
+  @override
+  String get profileRoleManager => 'Manager';
+
+  @override
+  String get profileApartment => 'Our apartment';
+
+  @override
+  String profileResidentCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count residents',
+      one: '1 resident',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get profileStatCleaned => 'Times cleaned';
+
+  @override
+  String get profileStatNextTurn => 'Next turn';
+
+  @override
+  String get profileStatGetBack => 'To get back';
+
+  @override
+  String get profileStatOwe => 'To pay';
+
+  @override
+  String get profileBankNone => 'No account added';
+
+  @override
+  String get profileNotifications => 'Notifications';
+
+  @override
+  String get profileLanguage => 'Language';
+
+  @override
+  String get languageMongolian => 'Монгол';
+
+  @override
+  String get languageEnglish => 'English';
+
+  @override
+  String get profilePrivacy => 'Privacy';
+
+  @override
+  String get profilePrivacySubtitle => 'Reports are never linked to your name';
+
+  @override
+  String get profilePrivacyBody =>
+      'Reports you send are anonymous: other residents and the manager can\'t see who sent them. Your phone number isn\'t shown to other users. Your bank account is shown only to people who owe you for something you bought.';
+
+  @override
+  String get profileHelp => 'Help';
+
+  @override
+  String get profileHelpBody =>
+      'If you have a problem, please contact your apartment\'s manager.';
+
+  @override
+  String get profileSignOutTitle => 'Sign out?';
+
+  @override
+  String get profileSignOutBody =>
+      'You\'ll need to send an SMS to sign in again.';
+
+  @override
+  String get homeGreetingMorning => 'Good morning,';
+
+  @override
+  String get homeGreetingAfternoon => 'Good afternoon,';
+
+  @override
+  String get homeGreetingEvening => 'Good evening,';
+
+  @override
+  String get homeCurrentDutyLabel => 'Your duty';
+
+  @override
+  String get homeNextDutyLabel => 'Your next duty';
+
+  @override
+  String get homeDutyTitle => 'Clean the public areas';
+
+  @override
+  String get homeNoDuty => 'No turn scheduled';
+
+  @override
+  String get homeMarkDone => 'Mark as done';
+
+  @override
+  String get homeViewSchedule => 'View schedule';
+
+  @override
+  String get homeQuickTitle => 'Quick actions';
+
+  @override
+  String homeItemsMissing(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items needed',
+      one: '1 item needed',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeReportAction => 'Report';
+
+  @override
+  String get homeAnonymous => 'Anonymous';
+
+  @override
+  String get homeActivityTitle => 'Recent activity';
+
+  @override
+  String get homeNoActivity => 'Nothing has happened yet.';
+
+  @override
+  String get homeToday => 'Today';
+
+  @override
+  String homeActivityCleaned(String name) {
+    return '$name finished cleaning';
+  }
+
+  @override
+  String homeActivityBought(String name, String item, String amount) {
+    return '$name bought $item · $amount';
+  }
+
+  @override
+  String homeActivityReport(String title) {
+    return 'Anonymous report: $title';
+  }
+
+  @override
+  String get notificationsTitle => 'Notifications';
+
+  @override
+  String get notificationsEmpty => 'No notifications yet.';
+
+  @override
+  String notificationPaid(String name, String amount) {
+    return '$name paid you $amount';
+  }
+
+  @override
+  String notificationNewPurchase(String name, String item, String amount) {
+    return '$name bought $item · your share $amount';
+  }
+
+  @override
+  String notificationReportNew(String category, String location) {
+    return 'New anonymous report: $category · $location';
+  }
+
+  @override
+  String notificationReportReplied(String location) {
+    return 'The report about $location got a reply';
+  }
+
+  @override
+  String notificationReportStatus(String location, String status) {
+    return 'Report about $location: $status';
+  }
 }

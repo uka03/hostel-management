@@ -68,6 +68,20 @@ class _Backend implements HttpClientAdapter {
       name = (options.data as Map)['p_name'] as String;
       return <String, dynamic>{};
     }
+    if (options.path == '/rest/v1/rpc/purchases_overview') {
+      return {
+        'today': '2026-11-09',
+        'active_count': 1,
+        'total_amount': 0,
+        'my_paid': 0,
+        'my_share': 0,
+        'purchases': <Object>[],
+        'needed_items': <Object>[],
+      };
+    }
+    if (options.path == '/rest/v1/rpc/my_notifications') {
+      return {'unread_count': 0, 'items': <Object>[]};
+    }
     if (options.path == '/functions/v1/reports') {
       return {'reports': <Object>[]};
     }
@@ -234,15 +248,19 @@ void main() {
     await _pumpApp(tester, backend, _session);
 
     // Every label is in the tab bar; only the active page adds its title.
-    expect(find.text('Нүүр'), findsNWidgets(2));
-    for (final label in ['Цэвэрлэгээ', 'Зардал', 'Мэдэгдэл', 'Профайл']) {
+    expect(find.text('Нүүр'), findsOneWidget);
+    for (final label in ['Мэдэгдэл', 'Профайл']) {
       expect(find.text(label), findsOneWidget);
     }
+    // These two are also Home's quick actions.
+    for (final label in ['Цэвэрлэгээ', 'Зардал']) {
+      expect(find.text(label), findsNWidgets(2));
+    }
 
-    await tester.tap(find.text('Зардал'));
-    await tester.pump();
+    await tester.tap(find.text('Зардал').last);
+    await _settle(tester);
 
-    expect(find.text('Зардал'), findsNWidgets(2));
+    expect(find.text('Хамтын худалдан авалт'), findsOneWidget);
     expect(find.text('Нүүр'), findsOneWidget);
   });
 }

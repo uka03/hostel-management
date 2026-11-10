@@ -3,6 +3,18 @@ import 'package:hostel/extensions/date_extensions.dart';
 
 enum DutyStatus { upcoming, active, done, missed }
 
+/// The rotation described by [overview], or null if it hasn't started.
+Rotation? rotationFrom(CleaningOverview overview) {
+  final start = overview.startDate;
+  if (start == null) return null;
+  return Rotation(
+    startDate: start,
+    versions: overview.versions,
+    overrides: {for (final o in overview.overrides) o.period: o.personId},
+    donePeriods: overview.donePeriods.toSet(),
+  );
+}
+
 /// The 2-day duty rotation, computed from what the server stores.
 ///
 /// A period is 2 calendar days. Each [RotationVersion] gives the order from

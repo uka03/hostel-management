@@ -11,6 +11,7 @@ import 'package:hostel/pages/reports/pages/report_form_page.dart';
 import 'package:hostel/pages/reports/provider/reports_provider.dart';
 import 'package:hostel/shared/components/custom_button.dart';
 import 'package:hostel/shared/components/primary_button.dart';
+import 'package:hostel/shared/components/reload_when_visible.dart';
 import 'package:hostel/utils/colors.dart';
 import 'package:hostel/utils/empty_state.dart';
 import 'package:hostel/utils/spacer.dart';
@@ -26,8 +27,11 @@ class ReportsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) =>
-          ReportsProvider(ReportsApi(context.read<DioClient>().dio))..load(),
-      child: const _ReportsView(),
+          ReportsProvider(ReportsApi(context.read<DioClient>().dio)),
+      child: ReloadWhenVisible(
+        onVisible: (context) => context.read<ReportsProvider>().load(),
+        child: const _ReportsView(),
+      ),
     );
   }
 }

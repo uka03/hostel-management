@@ -24,14 +24,7 @@ class CleaningProvider extends ChangeNotifier {
   /// Null until the schedule has started.
   Rotation? get rotation {
     final data = _overview;
-    final start = data?.startDate;
-    if (data == null || start == null) return null;
-    return Rotation(
-      startDate: start,
-      versions: data.versions,
-      overrides: {for (final o in data.overrides) o.period: o.personId},
-      donePeriods: data.donePeriods.toSet(),
-    );
+    return data == null ? null : rotationFrom(data);
   }
 
   int? get currentPeriod => rotation?.periodOf(_overview!.today);

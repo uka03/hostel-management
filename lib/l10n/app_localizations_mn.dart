@@ -453,4 +453,321 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get reportsSaved => 'Хадгалагдлаа.';
+
+  @override
+  String get purchasesTitle => 'Хамтын худалдан авалт';
+
+  @override
+  String purchasesSubtitle(int count) {
+    return '$count хүнд тэнцүү хуваана';
+  }
+
+  @override
+  String get purchasesFundLabel => 'Хамтын сан';
+
+  @override
+  String get purchasesYouPaid => 'Та төлсөн';
+
+  @override
+  String get purchasesYourShare => 'Таны хувь';
+
+  @override
+  String purchasesGetBack(String amount) {
+    return 'Танд буцаж ирэх $amount';
+  }
+
+  @override
+  String purchasesYouOwe(String amount) {
+    return 'Таны төлөх $amount';
+  }
+
+  @override
+  String get purchasesNeededTitle => 'Шаардлагатай бараа';
+
+  @override
+  String get purchasesNoNeeded => 'Шаардлагатай бараа алга.';
+
+  @override
+  String get purchasesClaim => 'Би авна';
+
+  @override
+  String get purchasesReceipt => 'Баримт';
+
+  @override
+  String get purchasesClaimedByYou => 'Та авахаар болсон';
+
+  @override
+  String purchasesClaimedBy(String name) {
+    return '$name авахаар болсон';
+  }
+
+  @override
+  String get purchasesRequestedToday => 'Өнөөдөр хүссэн';
+
+  @override
+  String get purchasesRequestedYesterday => 'Өчигдөр хүссэн';
+
+  @override
+  String purchasesRequestedDays(int days) {
+    return '$days өдрийн өмнө хүссэн';
+  }
+
+  @override
+  String get purchasesRemoveItem => 'Хүсэлт устгах';
+
+  @override
+  String get purchasesSeeAll => 'Бүгдийг харах';
+
+  @override
+  String get purchasesNoRecent => 'Худалдан авалт алга.';
+
+  @override
+  String purchasesPerPerson(String amount) {
+    return '$amount / хүн';
+  }
+
+  @override
+  String get purchasesLoadFailed => 'Худалдан авалтыг ачаалж чадсангүй.';
+
+  @override
+  String get purchasesAddPurchase => 'Худалдан авалт нэмэх';
+
+  @override
+  String get purchasesAddItem => 'Шаардлагатай бараа нэмэх';
+
+  @override
+  String get purchasesItemName => 'Барааны нэр';
+
+  @override
+  String get purchasesAmount => 'Дүн';
+
+  @override
+  String purchasesEachPays(int people, String amount) {
+    return '$people хүнд хуваавал нэг хүнд $amount';
+  }
+
+  @override
+  String get purchasesSave => 'Хадгалах';
+
+  @override
+  String get purchasesReceiptHint => 'Баримтын дүнгээ оруулна уу.';
+
+  @override
+  String get purchasesGiveUpItem => 'Авахаа болих';
+
+  @override
+  String get purchasesDeleteTitle => 'Устгах уу?';
+
+  @override
+  String get purchasesDeleteBody =>
+      'Энэ худалдан авалт бүх хүний тооцооноос хасагдана.';
+
+  @override
+  String get purchasesMarkPaid => 'Төлсөн';
+
+  @override
+  String get purchasesPay => 'Төлөх';
+
+  @override
+  String purchasesPaidCount(int paid, int total) {
+    return '$paid/$total төлсөн';
+  }
+
+  @override
+  String get purchasesPayTitle => 'Төлбөр төлөх';
+
+  @override
+  String get purchasesPayBank => 'Банк';
+
+  @override
+  String get purchasesPayAccountNumber => 'Дансны дугаар';
+
+  @override
+  String get purchasesPayAccountHolder => 'Данс эзэмшигчийн нэр';
+
+  @override
+  String purchasesPayNoAccount(String name) {
+    return '$name дансны мэдээллээ оруулаагүй байна. Биечлэн төлж болно.';
+  }
+
+  @override
+  String get purchasesPayLoadFailed => 'Дансны мэдээллийг ачаалж чадсангүй.';
+
+  @override
+  String get purchasesPayClose => 'Хаах';
+
+  @override
+  String get purchasesUnpaidTitle => 'Төлөөгүй худалдан авалт';
+
+  @override
+  String get purchasesUnpaidNone => 'Бүх худалдан авалтаа төлсөн байна.';
+
+  @override
+  String get purchasesHistoryTitle => 'Худалдан авалтын түүх';
+
+  @override
+  String get profileBankTitle => 'Дансны мэдээлэл';
+
+  @override
+  String get profileEditName => 'Нэр засах';
+
+  @override
+  String get profileRoleResident => 'Оршин суугч';
+
+  @override
+  String get profileRoleManager => 'Менежер';
+
+  @override
+  String get profileApartment => 'Манай байр';
+
+  @override
+  String profileResidentCount(int count) {
+    return '$count оршин суугч';
+  }
+
+  @override
+  String get profileStatCleaned => 'Удаа цэвэрлэсэн';
+
+  @override
+  String get profileStatNextTurn => 'Дараагийн ээлж';
+
+  @override
+  String get profileStatGetBack => 'Буцаж авах';
+
+  @override
+  String get profileStatOwe => 'Төлөх';
+
+  @override
+  String get profileBankNone => 'Данс нэмээгүй байна';
+
+  @override
+  String get profileNotifications => 'Мэдэгдэл';
+
+  @override
+  String get profileLanguage => 'Хэл';
+
+  @override
+  String get languageMongolian => 'Монгол';
+
+  @override
+  String get languageEnglish => 'English';
+
+  @override
+  String get profilePrivacy => 'Нууцлал';
+
+  @override
+  String get profilePrivacySubtitle => 'Мэдэгдлүүд таны нэртэй холбогдохгүй';
+
+  @override
+  String get profilePrivacyBody =>
+      'Таны илгээсэн мэдэгдэл нэргүй бөгөөд бусад оршин суугч, менежер хэн илгээснийг харах боломжгүй. Утасны дугаар тань бусад хэрэглэгчид харагдахгүй. Дансны мэдээлэл тань зөвхөн таны авсан зүйлд хувиа төлөх хүмүүст харагдана.';
+
+  @override
+  String get profileHelp => 'Тусламж';
+
+  @override
+  String get profileHelpBody =>
+      'Асуудал гарвал байрныхаа менежертэй холбогдоно уу.';
+
+  @override
+  String get profileSignOutTitle => 'Гарах уу?';
+
+  @override
+  String get profileSignOutBody => 'Дахин нэвтрэхэд SMS илгээх шаардлагатай.';
+
+  @override
+  String get homeGreetingMorning => 'Өглөөний мэнд,';
+
+  @override
+  String get homeGreetingAfternoon => 'Өдрийн мэнд,';
+
+  @override
+  String get homeGreetingEvening => 'Оройн мэнд,';
+
+  @override
+  String get homeCurrentDutyLabel => 'Таны жижүүр';
+
+  @override
+  String get homeNextDutyLabel => 'Таны дараагийн жижүүр';
+
+  @override
+  String get homeDutyTitle => 'Нийтийн талбайн цэвэрлэгээ';
+
+  @override
+  String get homeNoDuty => 'Ээлж товлогдоогүй';
+
+  @override
+  String get homeMarkDone => 'Хийсэн гэж тэмдэглэх';
+
+  @override
+  String get homeViewSchedule => 'Хуваарь харах';
+
+  @override
+  String get homeQuickTitle => 'Хурдан үйлдэл';
+
+  @override
+  String homeItemsMissing(int count) {
+    return '$count бараа дутуу';
+  }
+
+  @override
+  String get homeReportAction => 'Мэдэгдэх';
+
+  @override
+  String get homeAnonymous => 'Нэргүй';
+
+  @override
+  String get homeActivityTitle => 'Сүүлийн үйл явдал';
+
+  @override
+  String get homeNoActivity => 'Одоохондоо үйл явдал алга.';
+
+  @override
+  String get homeToday => 'Өнөөдөр';
+
+  @override
+  String homeActivityCleaned(String name) {
+    return '$name цэвэрлэгээ хийлээ';
+  }
+
+  @override
+  String homeActivityBought(String name, String item, String amount) {
+    return '$name $item авлаа · $amount';
+  }
+
+  @override
+  String homeActivityReport(String title) {
+    return 'Нэргүй мэдэгдэл: $title';
+  }
+
+  @override
+  String get notificationsTitle => 'Сонордуулга';
+
+  @override
+  String get notificationsEmpty => 'Одоохондоо сонордуулга алга.';
+
+  @override
+  String notificationPaid(String name, String amount) {
+    return '$name танд $amount төллөө';
+  }
+
+  @override
+  String notificationNewPurchase(String name, String item, String amount) {
+    return '$name $item авлаа · таны хувь $amount';
+  }
+
+  @override
+  String notificationReportNew(String category, String location) {
+    return 'Шинэ нэргүй мэдэгдэл: $category · $location';
+  }
+
+  @override
+  String notificationReportReplied(String location) {
+    return '«$location» мэдэгдэлд хариу ирлээ';
+  }
+
+  @override
+  String notificationReportStatus(String location, String status) {
+    return '«$location» мэдэгдэл: $status';
+  }
 }

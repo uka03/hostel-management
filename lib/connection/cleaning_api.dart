@@ -15,6 +15,12 @@ class CleaningApi {
     return CleaningOverview.fromJson(response.data!);
   }
 
+  /// How many duties this resident has finished, ever.
+  Future<int> cleanedCount() async {
+    final response = await _rpc<Map<String, dynamic>>('profile_stats');
+    return response.data!['cleaned_count'] as int;
+  }
+
   Future<void> setAreaChecked(String areaId, bool checked) => _rpc<void>(
     'set_area_checked',
     {'p_area_id': areaId, 'p_checked': checked},

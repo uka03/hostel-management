@@ -919,6 +919,558 @@ abstract class AppLocalizations {
   /// In mn, this message translates to:
   /// **'Хадгалагдлаа.'**
   String get reportsSaved;
+
+  /// No description provided for @purchasesTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хамтын худалдан авалт'**
+  String get purchasesTitle;
+
+  /// No description provided for @purchasesSubtitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'{count} хүнд тэнцүү хуваана'**
+  String purchasesSubtitle(int count);
+
+  /// No description provided for @purchasesFundLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хамтын сан'**
+  String get purchasesFundLabel;
+
+  /// No description provided for @purchasesYouPaid.
+  ///
+  /// In mn, this message translates to:
+  /// **'Та төлсөн'**
+  String get purchasesYouPaid;
+
+  /// No description provided for @purchasesYourShare.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны хувь'**
+  String get purchasesYourShare;
+
+  /// No description provided for @purchasesGetBack.
+  ///
+  /// In mn, this message translates to:
+  /// **'Танд буцаж ирэх {amount}'**
+  String purchasesGetBack(String amount);
+
+  /// No description provided for @purchasesYouOwe.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны төлөх {amount}'**
+  String purchasesYouOwe(String amount);
+
+  /// No description provided for @purchasesNeededTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Шаардлагатай бараа'**
+  String get purchasesNeededTitle;
+
+  /// No description provided for @purchasesNoNeeded.
+  ///
+  /// In mn, this message translates to:
+  /// **'Шаардлагатай бараа алга.'**
+  String get purchasesNoNeeded;
+
+  /// No description provided for @purchasesClaim.
+  ///
+  /// In mn, this message translates to:
+  /// **'Би авна'**
+  String get purchasesClaim;
+
+  /// No description provided for @purchasesReceipt.
+  ///
+  /// In mn, this message translates to:
+  /// **'Баримт'**
+  String get purchasesReceipt;
+
+  /// No description provided for @purchasesClaimedByYou.
+  ///
+  /// In mn, this message translates to:
+  /// **'Та авахаар болсон'**
+  String get purchasesClaimedByYou;
+
+  /// No description provided for @purchasesClaimedBy.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} авахаар болсон'**
+  String purchasesClaimedBy(String name);
+
+  /// No description provided for @purchasesRequestedToday.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өнөөдөр хүссэн'**
+  String get purchasesRequestedToday;
+
+  /// No description provided for @purchasesRequestedYesterday.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өчигдөр хүссэн'**
+  String get purchasesRequestedYesterday;
+
+  /// No description provided for @purchasesRequestedDays.
+  ///
+  /// In mn, this message translates to:
+  /// **'{days} өдрийн өмнө хүссэн'**
+  String purchasesRequestedDays(int days);
+
+  /// No description provided for @purchasesRemoveItem.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хүсэлт устгах'**
+  String get purchasesRemoveItem;
+
+  /// No description provided for @purchasesSeeAll.
+  ///
+  /// In mn, this message translates to:
+  /// **'Бүгдийг харах'**
+  String get purchasesSeeAll;
+
+  /// No description provided for @purchasesNoRecent.
+  ///
+  /// In mn, this message translates to:
+  /// **'Худалдан авалт алга.'**
+  String get purchasesNoRecent;
+
+  /// No description provided for @purchasesPerPerson.
+  ///
+  /// In mn, this message translates to:
+  /// **'{amount} / хүн'**
+  String purchasesPerPerson(String amount);
+
+  /// No description provided for @purchasesLoadFailed.
+  ///
+  /// In mn, this message translates to:
+  /// **'Худалдан авалтыг ачаалж чадсангүй.'**
+  String get purchasesLoadFailed;
+
+  /// No description provided for @purchasesAddPurchase.
+  ///
+  /// In mn, this message translates to:
+  /// **'Худалдан авалт нэмэх'**
+  String get purchasesAddPurchase;
+
+  /// No description provided for @purchasesAddItem.
+  ///
+  /// In mn, this message translates to:
+  /// **'Шаардлагатай бараа нэмэх'**
+  String get purchasesAddItem;
+
+  /// No description provided for @purchasesItemName.
+  ///
+  /// In mn, this message translates to:
+  /// **'Барааны нэр'**
+  String get purchasesItemName;
+
+  /// No description provided for @purchasesAmount.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дүн'**
+  String get purchasesAmount;
+
+  /// No description provided for @purchasesEachPays.
+  ///
+  /// In mn, this message translates to:
+  /// **'{people} хүнд хуваавал нэг хүнд {amount}'**
+  String purchasesEachPays(int people, String amount);
+
+  /// No description provided for @purchasesSave.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хадгалах'**
+  String get purchasesSave;
+
+  /// No description provided for @purchasesReceiptHint.
+  ///
+  /// In mn, this message translates to:
+  /// **'Баримтын дүнгээ оруулна уу.'**
+  String get purchasesReceiptHint;
+
+  /// No description provided for @purchasesGiveUpItem.
+  ///
+  /// In mn, this message translates to:
+  /// **'Авахаа болих'**
+  String get purchasesGiveUpItem;
+
+  /// No description provided for @purchasesDeleteTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Устгах уу?'**
+  String get purchasesDeleteTitle;
+
+  /// No description provided for @purchasesDeleteBody.
+  ///
+  /// In mn, this message translates to:
+  /// **'Энэ худалдан авалт бүх хүний тооцооноос хасагдана.'**
+  String get purchasesDeleteBody;
+
+  /// No description provided for @purchasesMarkPaid.
+  ///
+  /// In mn, this message translates to:
+  /// **'Төлсөн'**
+  String get purchasesMarkPaid;
+
+  /// No description provided for @purchasesPay.
+  ///
+  /// In mn, this message translates to:
+  /// **'Төлөх'**
+  String get purchasesPay;
+
+  /// No description provided for @purchasesPaidCount.
+  ///
+  /// In mn, this message translates to:
+  /// **'{paid}/{total} төлсөн'**
+  String purchasesPaidCount(int paid, int total);
+
+  /// No description provided for @purchasesPayTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Төлбөр төлөх'**
+  String get purchasesPayTitle;
+
+  /// No description provided for @purchasesPayBank.
+  ///
+  /// In mn, this message translates to:
+  /// **'Банк'**
+  String get purchasesPayBank;
+
+  /// No description provided for @purchasesPayAccountNumber.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дансны дугаар'**
+  String get purchasesPayAccountNumber;
+
+  /// No description provided for @purchasesPayAccountHolder.
+  ///
+  /// In mn, this message translates to:
+  /// **'Данс эзэмшигчийн нэр'**
+  String get purchasesPayAccountHolder;
+
+  /// No description provided for @purchasesPayNoAccount.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} дансны мэдээллээ оруулаагүй байна. Биечлэн төлж болно.'**
+  String purchasesPayNoAccount(String name);
+
+  /// No description provided for @purchasesPayLoadFailed.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дансны мэдээллийг ачаалж чадсангүй.'**
+  String get purchasesPayLoadFailed;
+
+  /// No description provided for @purchasesPayClose.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хаах'**
+  String get purchasesPayClose;
+
+  /// No description provided for @purchasesUnpaidTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Төлөөгүй худалдан авалт'**
+  String get purchasesUnpaidTitle;
+
+  /// No description provided for @purchasesUnpaidNone.
+  ///
+  /// In mn, this message translates to:
+  /// **'Бүх худалдан авалтаа төлсөн байна.'**
+  String get purchasesUnpaidNone;
+
+  /// No description provided for @purchasesHistoryTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Худалдан авалтын түүх'**
+  String get purchasesHistoryTitle;
+
+  /// No description provided for @profileBankTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дансны мэдээлэл'**
+  String get profileBankTitle;
+
+  /// No description provided for @profileEditName.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэр засах'**
+  String get profileEditName;
+
+  /// No description provided for @profileRoleResident.
+  ///
+  /// In mn, this message translates to:
+  /// **'Оршин суугч'**
+  String get profileRoleResident;
+
+  /// No description provided for @profileRoleManager.
+  ///
+  /// In mn, this message translates to:
+  /// **'Менежер'**
+  String get profileRoleManager;
+
+  /// No description provided for @profileApartment.
+  ///
+  /// In mn, this message translates to:
+  /// **'Манай байр'**
+  String get profileApartment;
+
+  /// No description provided for @profileResidentCount.
+  ///
+  /// In mn, this message translates to:
+  /// **'{count} оршин суугч'**
+  String profileResidentCount(int count);
+
+  /// No description provided for @profileStatCleaned.
+  ///
+  /// In mn, this message translates to:
+  /// **'Удаа цэвэрлэсэн'**
+  String get profileStatCleaned;
+
+  /// No description provided for @profileStatNextTurn.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дараагийн ээлж'**
+  String get profileStatNextTurn;
+
+  /// No description provided for @profileStatGetBack.
+  ///
+  /// In mn, this message translates to:
+  /// **'Буцаж авах'**
+  String get profileStatGetBack;
+
+  /// No description provided for @profileStatOwe.
+  ///
+  /// In mn, this message translates to:
+  /// **'Төлөх'**
+  String get profileStatOwe;
+
+  /// No description provided for @profileBankNone.
+  ///
+  /// In mn, this message translates to:
+  /// **'Данс нэмээгүй байна'**
+  String get profileBankNone;
+
+  /// No description provided for @profileNotifications.
+  ///
+  /// In mn, this message translates to:
+  /// **'Мэдэгдэл'**
+  String get profileNotifications;
+
+  /// No description provided for @profileLanguage.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хэл'**
+  String get profileLanguage;
+
+  /// No description provided for @languageMongolian.
+  ///
+  /// In mn, this message translates to:
+  /// **'Монгол'**
+  String get languageMongolian;
+
+  /// No description provided for @languageEnglish.
+  ///
+  /// In mn, this message translates to:
+  /// **'English'**
+  String get languageEnglish;
+
+  /// No description provided for @profilePrivacy.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нууцлал'**
+  String get profilePrivacy;
+
+  /// No description provided for @profilePrivacySubtitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Мэдэгдлүүд таны нэртэй холбогдохгүй'**
+  String get profilePrivacySubtitle;
+
+  /// No description provided for @profilePrivacyBody.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны илгээсэн мэдэгдэл нэргүй бөгөөд бусад оршин суугч, менежер хэн илгээснийг харах боломжгүй. Утасны дугаар тань бусад хэрэглэгчид харагдахгүй. Дансны мэдээлэл тань зөвхөн таны авсан зүйлд хувиа төлөх хүмүүст харагдана.'**
+  String get profilePrivacyBody;
+
+  /// No description provided for @profileHelp.
+  ///
+  /// In mn, this message translates to:
+  /// **'Тусламж'**
+  String get profileHelp;
+
+  /// No description provided for @profileHelpBody.
+  ///
+  /// In mn, this message translates to:
+  /// **'Асуудал гарвал байрныхаа менежертэй холбогдоно уу.'**
+  String get profileHelpBody;
+
+  /// No description provided for @profileSignOutTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Гарах уу?'**
+  String get profileSignOutTitle;
+
+  /// No description provided for @profileSignOutBody.
+  ///
+  /// In mn, this message translates to:
+  /// **'Дахин нэвтрэхэд SMS илгээх шаардлагатай.'**
+  String get profileSignOutBody;
+
+  /// No description provided for @homeGreetingMorning.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өглөөний мэнд,'**
+  String get homeGreetingMorning;
+
+  /// No description provided for @homeGreetingAfternoon.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өдрийн мэнд,'**
+  String get homeGreetingAfternoon;
+
+  /// No description provided for @homeGreetingEvening.
+  ///
+  /// In mn, this message translates to:
+  /// **'Оройн мэнд,'**
+  String get homeGreetingEvening;
+
+  /// No description provided for @homeCurrentDutyLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны жижүүр'**
+  String get homeCurrentDutyLabel;
+
+  /// No description provided for @homeNextDutyLabel.
+  ///
+  /// In mn, this message translates to:
+  /// **'Таны дараагийн жижүүр'**
+  String get homeNextDutyLabel;
+
+  /// No description provided for @homeDutyTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нийтийн талбайн цэвэрлэгээ'**
+  String get homeDutyTitle;
+
+  /// No description provided for @homeNoDuty.
+  ///
+  /// In mn, this message translates to:
+  /// **'Ээлж товлогдоогүй'**
+  String get homeNoDuty;
+
+  /// No description provided for @homeMarkDone.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хийсэн гэж тэмдэглэх'**
+  String get homeMarkDone;
+
+  /// No description provided for @homeViewSchedule.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хуваарь харах'**
+  String get homeViewSchedule;
+
+  /// No description provided for @homeQuickTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Хурдан үйлдэл'**
+  String get homeQuickTitle;
+
+  /// No description provided for @homeItemsMissing.
+  ///
+  /// In mn, this message translates to:
+  /// **'{count} бараа дутуу'**
+  String homeItemsMissing(int count);
+
+  /// No description provided for @homeReportAction.
+  ///
+  /// In mn, this message translates to:
+  /// **'Мэдэгдэх'**
+  String get homeReportAction;
+
+  /// No description provided for @homeAnonymous.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэргүй'**
+  String get homeAnonymous;
+
+  /// No description provided for @homeActivityTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Сүүлийн үйл явдал'**
+  String get homeActivityTitle;
+
+  /// No description provided for @homeNoActivity.
+  ///
+  /// In mn, this message translates to:
+  /// **'Одоохондоо үйл явдал алга.'**
+  String get homeNoActivity;
+
+  /// No description provided for @homeToday.
+  ///
+  /// In mn, this message translates to:
+  /// **'Өнөөдөр'**
+  String get homeToday;
+
+  /// No description provided for @homeActivityCleaned.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} цэвэрлэгээ хийлээ'**
+  String homeActivityCleaned(String name);
+
+  /// No description provided for @homeActivityBought.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} {item} авлаа · {amount}'**
+  String homeActivityBought(String name, String item, String amount);
+
+  /// No description provided for @homeActivityReport.
+  ///
+  /// In mn, this message translates to:
+  /// **'Нэргүй мэдэгдэл: {title}'**
+  String homeActivityReport(String title);
+
+  /// No description provided for @notificationsTitle.
+  ///
+  /// In mn, this message translates to:
+  /// **'Сонордуулга'**
+  String get notificationsTitle;
+
+  /// No description provided for @notificationsEmpty.
+  ///
+  /// In mn, this message translates to:
+  /// **'Одоохондоо сонордуулга алга.'**
+  String get notificationsEmpty;
+
+  /// No description provided for @notificationPaid.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} танд {amount} төллөө'**
+  String notificationPaid(String name, String amount);
+
+  /// No description provided for @notificationNewPurchase.
+  ///
+  /// In mn, this message translates to:
+  /// **'{name} {item} авлаа · таны хувь {amount}'**
+  String notificationNewPurchase(String name, String item, String amount);
+
+  /// No description provided for @notificationReportNew.
+  ///
+  /// In mn, this message translates to:
+  /// **'Шинэ нэргүй мэдэгдэл: {category} · {location}'**
+  String notificationReportNew(String category, String location);
+
+  /// No description provided for @notificationReportReplied.
+  ///
+  /// In mn, this message translates to:
+  /// **'«{location}» мэдэгдэлд хариу ирлээ'**
+  String notificationReportReplied(String location);
+
+  /// No description provided for @notificationReportStatus.
+  ///
+  /// In mn, this message translates to:
+  /// **'«{location}» мэдэгдэл: {status}'**
+  String notificationReportStatus(String location, String status);
 }
 
 class _AppLocalizationsDelegate

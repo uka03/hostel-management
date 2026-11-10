@@ -35,12 +35,14 @@ class _MainScaffoldState extends State<MainScaffold> {
         builder: (context, user, _) {
           return IndexedStack(
             index: _selectedIndex,
-            children: const [
-              HomePage(),
-              CleaningPage(),
-              PurchasesPage(),
-              ReportsPage(),
-              ProfilePage(),
+            children: [
+              HomePage(
+                onOpenTab: (index) => setState(() => _selectedIndex = index),
+              ),
+              const CleaningPage(),
+              const PurchasesPage(),
+              const ReportsPage(),
+              const ProfilePage(),
             ],
           );
         },

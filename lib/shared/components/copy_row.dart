@@ -16,10 +16,12 @@ class CopyRow extends StatefulWidget {
     required this.label,
     required this.value,
     this.valueColor,
+    this.valueFontSize = 24,
   });
 
   final String label, value;
   final Color? valueColor;
+  final double valueFontSize;
 
   @override
   State<CopyRow> createState() => _CopyRowState();
@@ -65,6 +67,7 @@ class _CopyRowState extends State<CopyRow> {
                 widget.value,
                 style: GeneralTextStyle.titleText(
                   textColor: widget.valueColor,
+                  fontSize: widget.valueFontSize,
                   letterSpacing: 2,
                 ),
               ),

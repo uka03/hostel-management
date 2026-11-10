@@ -38,7 +38,10 @@ class AuthApi {
   Future<UserResponseData?> fetchProfile(String userId) async {
     final response = await _dio.get<List<dynamic>>(
       '/rest/v1/profiles',
-      queryParameters: {'id': 'eq.$userId', 'select': 'id,name,role,status'},
+      queryParameters: {
+        'id': 'eq.$userId',
+        'select': 'id,name,role,status,bank_name,bank_account_number,bank_account_holder,notifications_enabled,language',
+      },
     );
     final rows = response.data!;
     if (rows.isEmpty) return null;
@@ -49,6 +52,30 @@ class AuthApi {
     await _dio.post<dynamic>(
       '/rest/v1/rpc/set_my_name',
       data: {'p_name': name},
+    );
+  }
+
+  Future<void> setPaymentAccount(
+    String bank,
+    String number,
+    String holder,
+  ) async {
+    await _dio.post<dynamic>(
+      '/rest/v1/rpc/set_my_payment_account',
+      data: {'p_bank': bank, 'p_number': number, 'p_holder': holder},
+    );
+  }
+
+  Future<void> setPreferences(
+    bool notificationsEnabled,
+    String language,
+  ) async {
+    await _dio.post<dynamic>(
+      '/rest/v1/rpc/set_my_preferences',
+      data: {
+        'p_notifications_enabled': notificationsEnabled,
+        'p_language': language,
+      },
     );
   }
 

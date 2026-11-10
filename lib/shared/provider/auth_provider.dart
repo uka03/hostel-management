@@ -49,6 +49,9 @@ class AuthProvider extends ChangeNotifier {
   /// The resident's profile; null until loaded, or if loading failed.
   UserResponseData? get user => _user;
 
+  /// The signed-in phone number, as Supabase stores it.
+  String? get phone => _session?.user.phone;
+
   Future<void> restore() async {
     _session = await _store.read();
     await _loadProfile();
@@ -100,6 +103,28 @@ class AuthProvider extends ChangeNotifier {
   /// Throws if saving fails, so the sign-up screen can say so.
   Future<void> saveName(String name) async {
     await _api().setMyName(name);
+    await refreshProfile();
+  }
+
+  /// Throws if saving fails, so the profile screen can say so.
+  Future<void> savePaymentAccount(
+    String bank,
+    String number,
+    String holder,
+  ) async {
+    await _api().setPaymentAccount(bank, number, holder);
+    await refreshProfile();
+  }
+
+  /// Saves only what is given, keeping the other setting as it is.
+  Future<void> savePreferences({
+    bool? notificationsEnabled,
+    String? language,
+  }) async {
+    await _api().setPreferences(
+      notificationsEnabled ?? _user?.notificationsEnabled ?? true,
+      language ?? _user?.language ?? 'mn',
+    );
     await refreshProfile();
   }
 
